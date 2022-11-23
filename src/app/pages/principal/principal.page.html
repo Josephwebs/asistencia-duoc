@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true" class="ion-padding magnolia">
+  <img
+    class="logo"
+    src="../../../assets/img/DUOC.png"
+    alt="duoc padre
+    alonso ovalle"
+  />
+
+  <h1>Bienvenido</h1>
+
+  <h1 style="padding-bottom: 10px">{{" " + nombre + " " + apellido}}</h1>
+
+  <ion-button
+    (click)="registrarAsistencia()"
+    expand="block"
+    color="ion-color-warning"
+    class="primario-bg-button"
+    >Registrar asistencia</ion-button
+  >
+
+  <ion-button
+    (click)="editar()"
+    expand="block"
+    color="ion-color-warning"
+    class="primario-bg-button"
+    >Editar contraseña</ion-button
+  >
+
+  <ion-button
+    (click)="cerrarSesion()"
+    expand="block"
+    color="ion-color-warning"
+    class="primario-bg-button"
+    >Cerrar Sesión</ion-button
+  >
+</ion-content>

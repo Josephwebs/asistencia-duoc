@@ -1,0 +1,52 @@
+<ion-header> </ion-header>
+
+<ion-content class="ion-padding magnolia">
+  <img
+    class="logo"
+    src="../../../assets/img/DUOC.png"
+    alt="duoc padre
+    alonso ovalle"
+  />
+  <ion-text>
+    <h1>Registrate como usuario ingresando los siguientes datos</h1>
+  </ion-text>
+  <ion-item class="ion-margin-top inputRedondo" lines="none">
+    <ion-label position="stacked">Correo</ion-label>
+    <ion-input type="email" [(ngModel)]="mdl_correo" required="true">
+      <ion-icon name="mail-outline" slot="start"></ion-icon>
+    </ion-input>
+  </ion-item>
+  <ion-item class="ion-margin-top inputRedondo">
+    <ion-label position="stacked">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="mdl_pass" required="true">
+      <ion-icon name="key" slot="start"></ion-icon>
+    </ion-input>
+  </ion-item>
+  <ion-item class="ion-margin-top inputRedondo">
+    <ion-label position="stacked">Nombre</ion-label>
+    <ion-input [(ngModel)]="mdl_nombre" required="true">
+      <ion-icon name="person" slot="start"></ion-icon>
+    </ion-input>
+  </ion-item>
+  <ion-item class="ion-margin-top inputRedondo">
+    <ion-label position="stacked">Apellido</ion-label>
+    <ion-input [(ngModel)]="mdl_apellido" required="true">
+      <ion-icon name="person" slot="start"></ion-icon>
+    </ion-input>
+  </ion-item>
+  <ion-button
+    (click)="registrarUser()"
+    expand="block"
+    class="primario-bg-button"
+    color="ion-color-warning"
+    >Registrate</ion-button
+  >
+
+  <ion-button
+    (click)="back()"
+    expand="block"
+    color="ion-color-warning"
+    class="primario-bg-button"
+    >Volver</ion-button
+  >
+</ion-content>

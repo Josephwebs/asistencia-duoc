@@ -1,0 +1,57 @@
+<ion-header> </ion-header>
+
+<ion-content class="ion-padding magnolia">
+  <img
+    class="logo"
+    src="../../../assets/img/DUOC.png"
+    alt="duoc padre
+    alonso ovalle"
+  />
+  <ion-text>
+    <h1>Aqui puedes cambiar tu contraseña</h1>
+  </ion-text>
+  <ion-item class="ion-margin-top inputRedondo" lines="none">
+    <ion-label position="stacked">Correo</ion-label>
+    <ion-input [(ngModel)]="mdl_correo" value="{{mdl_correo}}">
+      <ion-icon
+        style="padding-right: 12px"
+        name="mail-outline"
+        slot="start"
+      ></ion-icon>
+    </ion-input>
+  </ion-item>
+
+  <ion-item class="ion-margin-top inputRedondo">
+    <ion-label position="stacked">Contraseña Actual</ion-label>
+    <ion-input type="password" [(ngModel)]="mdl_passActual">
+      <ion-icon
+        style="padding-right: 12px"
+        name="person"
+        slot="start"
+      ></ion-icon>
+    </ion-input>
+  </ion-item>
+
+  <ion-item class="ion-margin-top inputRedondo">
+    <ion-label position="stacked">Contraseña Nueva</ion-label>
+    <ion-input type="password" [(ngModel)]="mdl_new_pass">
+      <ion-icon style="padding-right: 12px" name="key" slot="start"></ion-icon>
+    </ion-input>
+  </ion-item>
+
+  <ion-button
+    (click)="editarPass()"
+    expand="block"
+    color="ion-color-warning"
+    class="primario-bg-button"
+    >Guardar</ion-button
+  >
+
+  <ion-button
+    (click)="back()"
+    expand="block"
+    color="ion-color-warning"
+    class="primario-bg-button"
+    >Volver</ion-button
+  >
+</ion-content>
